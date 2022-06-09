@@ -1,0 +1,381 @@
+body {
+    background-color: rgb(35, 35, 35);
+}
+
+main {
+    min-height: 90vh;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'Koulen', cursive;;
+}
+
+.navbar {
+    border-bottom:solid 5px gold;
+}
+
+#carouselExampleSlidesOnly {
+    border-bottom: solid 5px gold;
+
+}
+
+/* Comienza Footer*/
+
+.footer {
+    border-top: solid 5px gold;
+    color: gold;
+}
+
+.container_redes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo_redes {
+    text-align: center;
+}
+
+
+.redes a {
+    text-decoration: none;
+    color: gold;
+    display: block;
+}
+
+.redes a img {
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+/*Termina el footer*/
+
+@media only screen and (min-width:1201px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 30% 30% auto;
+        grid-template-rows: 470px 470px;
+        grid-template-areas: 
+        "container1 container1 container3"
+        "container2 container2 container3"
+        ;
+        
+    }
+}
+
+
+.container1 {
+    grid-area: container1;
+    align-self: center;
+    margin: 5px;
+    
+}
+
+.container2 {
+    grid-area: container2;
+    align-self: center;
+    margin: 5px;
+}
+
+.container3 {
+    grid-area: container3;
+    align-self: center;
+}
+
+/* Comienzan los estilos de las secciones*/
+.box1 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+/*     flex-wrap: wrap-reverse; */
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.834);
+    padding: 10px;
+    gap: 4rem;
+    border-radius: 10px;
+    transform: 1s;
+    
+}
+
+.box1:hover {
+    box-shadow: 2px 2px 20px gold;
+}
+
+#foto {
+    width: 300px;
+    height: 400px;
+    border: inset 2px rgb(243, 180, 64);
+    border-radius: 5px;
+}
+
+
+
+.texto_box1 h3 {
+    width: 400px;
+    font-size: 60px;
+    margin: 0%;
+
+}
+
+.texto_box1 {
+    width: 400px;
+    
+}
+
+.box2 {
+    margin: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.834);
+    color: gold;
+    padding: 10px;
+    gap: 4rem;
+    border-radius: 10px;
+    transform: 1s;
+}
+
+.box2:hover {
+    box-shadow: 2px 2px 20px gold;
+}
+
+#foto2 {
+    width: 300px;
+    height: 400px;
+    border: solid 2px gold;
+    border-radius: 5px;
+}
+
+.texto_box2 h3 {
+    width: 400px;
+    font-size: 60px;
+    margin: 0%;
+}
+
+.texto_box2 {
+    width: 400px;
+}
+
+.box3 {
+    margin: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.834);
+    color: gold;
+    padding: 10px;
+    gap: 2rem;
+    border-radius: 10px;
+    transform: 1s;
+}
+
+.box3:hover {
+    box-shadow: 2px 2px 20px gold;
+}
+
+#foto3 {
+    width: 300px;
+    height: 400px;
+    border: solid 2px gold;
+    border-radius: 5px;
+}
+
+.texto_box3 h3 {
+    width: 400px;
+    font-size: 60px;
+    margin: 0%;
+}
+
+.texto_box3 {
+    width: 400px;
+}
+
+/*Finalizas las secciones*/
+
+/* Comienza pagina "nosotros.html" */
+
+.titulo_equipo {
+    color: gold;
+}
+
+.accordion-button {
+    border: solid 2px gold;
+}
+
+/*Finaliza pagina "nosotros.html"*/
+
+
+
+/*Medias Queries*/
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 400px 400px 400px;
+        grid-template-areas: 
+        "container1"
+        "container2"
+        "container3"
+        ;
+
+    }
+
+    /*Secciones*/
+    .container1 {
+        grid-area: container1;
+        
+    }
+    
+    .container2 {
+        grid-area: container2;
+
+    }
+    
+    .container3 {
+        grid-area: container3;
+        
+    }
+
+    .box1 {
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+}
+
+    .box3 {
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 400px 400px 400px;
+        grid-template-areas: 
+        "container1"
+        "container2"
+        "container3"
+        ;
+
+    }
+
+    /*Secciones*/
+    .container1 {
+        grid-area: container1;
+        
+    }
+    
+    .container2 {
+        grid-area: container2;
+
+    }
+    
+    .container3 {
+        grid-area: container3;
+        
+    }
+
+  #foto {
+    display: none;
+  }
+
+  #foto2 {
+      display: none;
+  }
+
+  #foto3 {
+      display: none;
+  }
+
+  .box1 {
+      background-image: url(../img/foto11.png);
+      background-size: cover;
+      height: 400px;
+
+  }
+
+  .texto_box1 h3 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.texto_box1 {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+  .box2 {
+      background-image: url(../img/foto22.png);
+      background-size: cover;
+      height: 400px;
+    
+  }
+
+  .texto_box2 h3 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.texto_box2 {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+  .box3 {
+    background-image: url(../img/foto3.jpeg);
+    background-size: cover;
+    height: 400px;
+
+  }
+
+  .texto_box3 h3 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.texto_box3 {
+    
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+
+/* Comienza Footer*/
+
+.container_redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo_redes {
+    text-align: center;
+}
+
+.redes a p {
+    display: none;
+}
+
+.redes a img {
+    width: 2rem;
+    height: 2rem;
+
+}
+
+/*Termina el footer*/
+}
